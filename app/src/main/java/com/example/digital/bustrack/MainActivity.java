@@ -136,6 +136,11 @@ public class MainActivity extends AppCompatActivity {
 
             return result.toString();
         }
-        public void recovery
+        public void recovery (View v){
+            Intent intent=new Intent(this,PasswordRecovery.class);
+            intent.putExtra("display","recoveryuser");
+            startActivity(intent);
+
     }
+
 }
